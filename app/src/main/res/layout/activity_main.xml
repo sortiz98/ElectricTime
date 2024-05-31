@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FA890A"
+    android:backgroundTint="#FA8A0C"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <Button
+        android:id="@+id/distance"
+        android:layout_width="105dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="#FBAB00"
+        android:fontFamily="@font/assistant"
+        android:text="Distance"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/time"
+        android:layout_width="75dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="120dp"
+        android:backgroundTint="#FBAB00"
+        android:fontFamily="@font/assistant"
+        android:text="Time"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/context"
+        android:layout_width="251dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/assistant_light"
+        android:text="I have to travel"
+        android:textAlignment="center"
+        android:textColor="#FAF7F7"
+        android:textColorHint="#FFFFFF"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/units"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="260dp"
+        android:layout_marginTop="64dp"
+        android:fontFamily="@font/assistant_light"
+        android:text="miles"
+        android:textAlignment="viewStart"
+        android:textColor="#F8F6F6"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:layout_width="414dp"
+        android:layout_height="423dp"
+        android:background="#FCFDFC"
+        android:paddingLeft="16dp"
+        android:paddingTop="1dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:context=".MainActivity">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/my_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="111dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:fontFamily="@font/assistant_light"
+        android:inputType="number"
+        android:text="Enter"
+        android:textAlignment="center"
+        android:textColor="#FDFDFC"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageBiking"
+        android:layout_width="198dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="244dp"
+        android:layout_marginTop="160dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/screen_shot_2020_09_17_at_8_06_26_pm" />
+
+    <ImageView
+        android:id="@+id/imageWalking"
+        android:layout_width="190dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="160dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/walking" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="218dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="240dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/standing" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
